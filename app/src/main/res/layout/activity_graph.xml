@@ -12,4 +12,74 @@
         android:layout_height="0dp"
         android:layout_margin="8dp"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/oxyC"
+        app:layout_constraintTop_toBottomOf="@+id/line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/oxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="Normal Oxygen level range is \nBetween 95% to 100%"
+            android:textSize="24sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toBottomOf="@+id/oxyC"
+        android:id="@+id/tempC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="Normal resting Temperature is between 36 Celcius to 37.2 Celcius"
+            android:textSize="24sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toBottomOf="@+id/tempC"
+        android:id="@+id/rateC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="Normal resting Heart Rate for adult is between 60bpm to 100bpm"
+            android:textSize="24sp"
+            />
+
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

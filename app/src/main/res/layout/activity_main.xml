@@ -8,14 +8,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Spinner
-        android:id="@+id/spinner"
+    <TextView
+        android:id="@+id/User"
         android:layout_width="150dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:text="Graph"
+        android:text="Health Info"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -51,7 +51,7 @@
         android:columnCount="2"
         android:columnOrderPreserved="false"
         android:rowCount="2"
-        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:layout_constraintTop_toBottomOf="@id/User"
         tools:layout_editor_absoluteX="5dp">
 
         <androidx.cardview.widget.CardView
@@ -198,6 +198,7 @@
                     android:textSize="24sp" />
 
                 <ImageView
+                    android:id="@+id/icon"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_marginTop="18dp"
